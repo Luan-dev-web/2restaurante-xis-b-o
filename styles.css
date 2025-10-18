@@ -19,17 +19,16 @@ html {
         margin: 0;
         font-family: 'Marcellus', sans-serif;
       }
-      
-      .menu-icon {
-        font-size: 40px;
-        cursor: pointer;
-        padding: 20px;
-        z-index: 10;
-        position: relative;
-        width: 40px;
-      }
       .links-menu{
-        margin-left: -68px;
+        margin-left: -52px;
+      }
+      .menu{
+        display: flex;
+      }
+      .xis-bao{
+        font-size: 31px;
+        margin-top: 19px;
+        margin-left: 17px;
       }
       
       .menu-overlay {
@@ -38,7 +37,7 @@ html {
         left: 0;
         width: 390px;
         height: 100%;
-        background-color: rgba(0,0,0,0.95);
+        background-color: #253551;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -47,6 +46,17 @@ html {
         pointer-events: none;
         transition: opacity 0.4s ease;
         z-index: 5;
+      }
+      .menu-icon {
+        font-size: 40px;
+        cursor: pointer;
+        padding: 8px;
+        z-index: 10;
+        position: relative;
+        width: 40px;
+        margin-left: 190px;
+        margin-top: 2px;
+        color: black;
       }
       
       .menu-overlay.active {
@@ -60,6 +70,27 @@ html {
         font-size: 30px;
         text-decoration: none;
         margin: 15px 0;
+        margin-left: -52px;
+      }
+      .menu-icon {
+        font-size: 40px;
+        cursor: pointer;
+        padding: 8px;
+        position: relative;
+        z-index: 10;
+        width: 40px;
+        margin-left: 159px;
+        margin-top: 2px;
+        color: black; /* cor normal */
+        transition: color 0.3s ease;
       }
       
+      /* quando o menu estiver ativo, o botão também muda de cor */
+      .menu-icon.active {
+        color: white;
+      }
+      .xis-bao.active {
+        color: white;
+        z-index: 200;
+      }
 }
