@@ -19,12 +19,6 @@ html {
         margin: 0;
         font-family: 'Marcellus', sans-serif;
       }
-      .links-menu{
-        margin-left: -52px;
-      }
-      .menu{
-        display: flex;
-      }
       .xis-bao{
         font-size: 31px;
         margin-top: 19px;
@@ -51,7 +45,7 @@ html {
         font-size: 40px;
         cursor: pointer;
         padding: 8px;
-        z-index: 10;
+        z-index: 100;
         position: relative;
         width: 40px;
         margin-left: 190px;
@@ -70,16 +64,18 @@ html {
         font-size: 30px;
         text-decoration: none;
         margin: 15px 0;
-        margin-left: -52px;
+        margin-left: -5px;
+        font-size: 37px;
       }
+
       .menu-icon {
         font-size: 40px;
         cursor: pointer;
         padding: 8px;
         position: relative;
-        z-index: 10;
+        z-index: 1000;
         width: 40px;
-        margin-left: 159px;
+        margin-left: 210px;
         margin-top: 2px;
         color: black; /* cor normal */
         transition: color 0.3s ease;
@@ -88,9 +84,33 @@ html {
       /* quando o menu estiver ativo, o botão também muda de cor */
       .menu-icon.active {
         color: white;
+        z-index: 1001;
       }
       .xis-bao.active {
         color: white;
         z-index: 200;
       }
+      .xis-capa{
+        width: 400px;
+        height: auto;
+        margin-top: 71px;
+      }
+      .menu-xis {
+        display: block;
+        color: white;
+        text-decoration: underline;
+        position: relative; 
+        font-size: 43px;
+        top: -350px;
+        margin-top: 15px;
+        left: 26px;
+    }
+    .menu{
+      display: flex;
+      position: fixed;
+      background-color: white;
+      width: 100%;
+    }
+    
+    
 }
