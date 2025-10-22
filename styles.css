@@ -1,166 +1,385 @@
 .marcellus-regular {
-    font-family: "Marcellus", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 * {
-    font-family: 'Marcellus', sans-serif;
+  font-family: 'Marcellus', sans-serif;
 }
 
 body,
 html {
-    margin: 0;
+  margin: 0;
 }
 
 /*CELULAR*/
 @media (max-width: 400px) {
-    body {
-        margin: 0;
-        font-family: 'Marcellus', sans-serif;
-      }
-      .xis-bao{
-        font-size: 31px;
-        margin-top: 28px;
-        margin-left: 17px;
-        z-index: 9999;
-      }
-      
-      .menu-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 390px;
-        height: 100%;
-        background-color: #253551;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.4s ease;
-        z-index: 5;
-      }
-      .menu-icon {
-        font-size: 40px;
-        cursor: pointer;
-        padding: 8px;
-        z-index: 5;
-        position: relative;
-        width: 40px;
-        margin-left: 190px;
-        margin-top: 2px;
-        color: black;
-      }
-      
-      .menu-overlay.active {
-        opacity: 1;
-        pointer-events: auto;
-        margin-top: -65px;
-      }
-      
-      .menu-overlay a {
-        color: white;
-        font-size: 30px;
-        text-decoration: none;
-        margin: 15px 0;
-        margin-left: -5px;
-        font-size: 37px;
-      }
+  body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Marcellus', sans-serif;
+    background-color: #bdd5ff;
+  }
 
-      .menu-icon {
-        font-size: 40px;
-        cursor: pointer;
-        padding: 8px;
-        position: relative;
-        z-index: 9999;
-        width: 40px;
-        margin-left: 210px;
-        margin-top: 8px;
-        color: black; /* cor normal */
-        transition: color 0.3s ease;
-      }
-      
-      /* quando o menu estiver ativo, o botão também muda de cor */
-      .menu-icon.active {
-        color: white;
-        position: relative;
-        margin-top: -86px;
-        margin-left: 317px;
-      }
-      .xis-bao.active {
-        color: white;
-        z-index: 9999;
-        position: relative;
-      }
-      .xis-capa{
-        width: 400px;
-        height: auto;
-        margin-top: 71px;
-      }
-      .menu-xis {
-        display: block;
-        color: white;
-        text-decoration: underline;
-        position: relative; 
-        font-size: 43px;
-        top: -350px;
-        margin-top: 15px;
-        left: 26px;
-        width: 160px;
-    }
-    .menu-active{
-      background-color: #253551;
-    }
-    .menu{
-      display: flex;
-      position: fixed;
-      background-color: white;
-      width: 100%;
-      z-index: 9998;
-      height: 77px;
-    }
-    /*embaixo-capa*/
-    .embaixoCapa{
-      background-color: #253551;
-      color: white;
-      position: relative;
-      bottom: 300px;
-      height: 460px;
-      justify-content: center;
-    }
-    .local{
-      width: 86%;
-      text-align: center;
-      margin-left: 7%;
-      padding-top: 50px;
-      font-size: 19px;
-    }
-    .local2{
-      width: 86%;
-      text-align: center;
-      margin-left: 7%;
-      padding-top: 10px;
-      font-size: 19px;
-    }
-    .botReserva{
-      border-radius: 0;
-      text-decoration: none;
-      border: solid 2px white;
-      font-size: 10px;
-      color: white;
-      background-color: #253551;
-      margin-left: 107px;
-      width: 45%;
-      height: 45px;
-      font-size: 15px;
-      margin-top: 10px;
-      z-index: 100;
-    }
-    .botReserva:hover{
-      background-color: white;
-      color: #253551;
-    }
-    
+  .xis-bao {
+    font-size: 31px;
+    margin-top: 28px;
+    margin-left: 17px;
+    z-index: 9999;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 390px;
+    height: 100%;
+    background-color: #253551;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 5;
+  }
+
+  .menu-icon {
+    font-size: 40px;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 5;
+    position: relative;
+    width: 40px;
+    margin-left: 190px;
+    margin-top: 2px;
+    color: black;
+  }
+
+  .menu-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+    margin-top: -65px;
+  }
+
+  .menu-overlay a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 15px 0;
+    margin-left: -5px;
+    font-size: 37px;
+  }
+
+  .menu-icon {
+    font-size: 40px;
+    cursor: pointer;
+    padding: 8px;
+    position: relative;
+    z-index: 9999;
+    width: 40px;
+    margin-left: 210px;
+    margin-top: 8px;
+    color: black;
+    /* cor normal */
+    transition: color 0.3s ease;
+  }
+
+  /* quando o menu estiver ativo, o botão também muda de cor */
+  .menu-icon.active {
+    color: white;
+    position: relative;
+    margin-top: -86px;
+    margin-left: 317px;
+  }
+
+  .menu-active {
+    background-color: #253551;
+  }
+
+  .menu {
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 9998;
+    height: 77px;
+  }
+
+  .xis-bao.active {
+    color: white;
+    z-index: 9999;
+    position: relative;
+  }
+
+  /*imagem com menu*/
+  .xis-capa {
+    width: 400px;
+    height: auto;
+    margin-top: 71px;
+  }
+
+  .menu-xis {
+    display: block;
+    color: white;
+    text-decoration: underline;
+    position: relative;
+    font-size: 43px;
+    top: -350px;
+    margin-top: 15px;
+    left: 26px;
+    width: 160px;
+  }
+
+  /*embaixo-capa-imagem*/
+  .embaixoCapa {
+    background-color: #253551;
+    color: white;
+    position: relative;
+    bottom: 300px;
+    height: 375px;
+    justify-content: center;
+  }
+
+  .local {
+    width: 86%;
+    text-align: center;
+    margin-left: 7%;
+    padding-top: 50px;
+    font-size: 19px;
+  }
+
+  .local2 {
+    width: 86%;
+    text-align: center;
+    margin-left: 7%;
+    padding-top: 10px;
+    font-size: 19px;
+  }
+
+  .botReserva {
+    border-radius: 0;
+    text-decoration: none;
+    border: solid 2px white;
+    font-size: 10px;
+    color: white;
+    background-color: #253551;
+    margin-left: 107px;
+    width: 45%;
+    height: 45px;
+    font-size: 15px;
+    margin-top: 10px;
+    z-index: 100;
+    transition: 0.2s;
+  }
+
+  .botReserva:hover {
+    background-color: white;
+    color: #253551;
+  }
+
+  /*primeira comida*/
+  .comida1 {
+    width: 308px;
+    height: auto;
+    top: -225px;
+    position: relative;
+    margin-left: 42px;
+  }
+
+  .caixa1 {
+    height: 270px;
+    width: auto;
+  }
+
+  .xis1 {
+    position: relative;
+    top: -217px;
+    text-align: center;
+    width: 356px;
+    margin-left: 16px;
+    font-size: 17px;
+  }
+
+  .nossaLoja {
+    margin-left: 26px;
+    font-size: 15px;
+    position: relative;
+    top: -180px;
+    color: #505050;
+  }
+
+  .conheçaMais {
+    color: #505050;
+    text-decoration: underline 10%;
+    margin-left: 89px;
+    font-size: 15px;
+    position: relative;
+    top: -161px;
+  }
+
+  .outraim {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 352px;
+  }
+
+  .outraim2 {
+    margin-left: 12%;
+    width: 75%;
+    top: -300px;
+    position: relative;
+    margin-bottom: 41px;
+  }
+
+  .vermute {
+    text-align: center;
+    width: 346px;
+    margin-bottom: 399px;
+    position: relative;
+    top: -286px;
+    margin-left: 23px;
+    font-size: 20px;
+  }
+
+  .sobrebebida {
+    position: relative;
+    top: -651px;
+    font-size: 17px;
+    width: 346px;
+    margin-left: 5%;
+    text-align: center;
+    color: #505050;
+  }
+
+  .comochegar {
+    background-color: #253551;
+    position: relative;
+    top: -616px;
+    height: 476px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .ruas {
+    padding-top: 30px;
+    line-height: 5px;
+    font-size: 25px;
+  }
+
+  .comobotao {
+    border-radius: 0;
+    background-color: #253551;
+    border: solid 2px white;
+    color: white;
+    width: 225px;
+    height: 56px;
+    margin-top: 56px;
+    transition: 0.2s;
+  }
+
+  .comobotao:hover {
+    background-color: white;
+    color: #253551;
+  }
+
+  .restodosite {
+    height: auto;
+  }
+
+  .horarios {}
+
+  .data1 {
+    margin-top: 72px;
+    line-height: 10px;
+  }
+
+  .data2 {
+    margin-top: 60px;
+    line-height: 10px;
+  }
+
+  .imagem-fundo {
+    position: relative;
+    top: -616px;
+    height: 400px;
+    width: 100%;
+  }
+
+  .cadastre-se {
+    top: -978px;
+    position: relative;
+    text-align: center;
+  }
+  .ca-se{
+    color: #cdcdcd;
+    margin-top: 21px;
+    width: 230px;
+    margin-left: 83px;
+  }
+  .assine{
+    color: #c9c9c9;
+    font-size: 20px;
+  }
+  .input{
+    left: 7px;
+    position: relative;
+    margin-top: 30px;
+    width: 218px;
+    height: 30px;
+    border: solid 2px #404040;
+  }
+  .cadastre{
+    position: relative;
+    top: 33px;
+    border-radius: 0;
+    color: white;
+    border: solid 2px white;
+    background-color: transparent;
+    width: 200px;
+    height: 53px;
+    left: 6px;
+    transition: 0.2s;
+  }
+  .cadastre:hover{
+    background-color: white;
+    color: black;
+  }
+  /*FIM*/
+  footer{
+    position: relative;
+    bottom: 861px;
+    border-top: solid 3px #6b6bbd;
+  }
+  .corCinza{
+    color: #505050;
+    margin-left: 13px;
+  }
+  .bao{
+    font-size: 25px;
+    margin-left: 13px;
+  }
+  .move1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .restodosite{
+    height: 3593px;
+    margin: 0;
+  }
+  .face{
+    width: 30px;
+    height: auto;
+    margin-left: 298px;
+  }
+  .whats{
+    width: 35px;
+    height: auto;
+    position: relative;
+    top: 2px;
+  }
 }
