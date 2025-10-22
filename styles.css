@@ -28,6 +28,7 @@ html {
     margin-left: 17px;
     z-index: 9999;
     width: 167px;
+    white-space: nowrap;
   }
 
   .menu-overlay {
