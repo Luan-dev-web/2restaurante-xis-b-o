@@ -92,9 +92,9 @@ html {
   /* quando o menu estiver ativo, o botão também muda de cor */
   .menu-icon.active {
     color: white;
-    position: relative;
-    margin-top: -86px;
-    margin-left: 317px;
+    position: fixed;
+    margin-top: 9px;
+    margin-left: 312px;
   }
 
   .menu-active {
@@ -112,8 +112,7 @@ html {
 
   .xis-bao.active {
     color: white;
-    z-index: 9999;
-    position: relative;
+    position: fixed;
   }
 
   /*imagem com menu*/
