@@ -114,6 +114,10 @@ html {
     color: white;
     position: fixed;
   }
+  .restodosite {
+    height: auto;
+  }
+  /*Daqui pra cima, todos*/
 
   /*imagem com menu*/
   .xis-capa {
@@ -132,6 +136,17 @@ html {
     margin-top: 15px;
     left: 26px;
     width: 160px;
+  }
+  .menu-xis2 {
+    display: flex;
+    color: white;
+    text-decoration: underline;
+    position: relative;
+    font-size: 43px;
+    top: -350px;
+    margin-top: 15px;
+    left: 26px;
+    width: 311px;
   }
 
   /*embaixo-capa-imagem*/
@@ -288,9 +303,7 @@ html {
     color: #253551;
   }
 
-  .restodosite {
-    height: auto;
-  }
+  
 
   .horarios {}
 
@@ -352,37 +365,37 @@ html {
   }
   /*FIM*/
   footer{
-      position: relative;
-      border-top: solid 3px #6b6bbd;
-      top: -861px;
-    }    
-  .corCinza{
-    color: #505050;
-    margin-left: 13px;
-  }
-  .bao{
-    font-size: 25px;
-    margin-left: 13px;
-  }
-  .move1{
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .restodosite{
-    height: auto;
-    margin: 0;
-  }
-  .face{
-    width: 30px;
-    height: auto;
-    margin-left: 298px;
-  }
-  .whats{
-    width: 35px;
-    height: auto;
     position: relative;
-    top: 2px;
-  }
+    border-top: solid 3px #6b6bbd;
+    top: -861px;
+  }    
+.corCinza{
+  color: #505050;
+  margin-left: 13px;
+}
+.bao{
+  font-size: 25px;
+  margin-left: 13px;
+}
+.move1{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.restodosite{
+  height: auto;
+  margin: 0;
+}
+.face{
+  width: 30px;
+  height: auto;
+  margin-left: 298px;
+}
+.whats{
+  width: 35px;
+  height: auto;
+  position: relative;
+  top: 2px;
+}
   .arrumar{
     overflow: hidden;
     height: 3653px;
