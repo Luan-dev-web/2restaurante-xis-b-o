@@ -1,0 +1,262 @@
+.marcellus-regular {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Marcellus', sans-serif;
+}
+
+body,
+html {
+    margin: 0;
+}
+
+/*CELULAR*/
+@media (max-width: 400px) {
+    body {
+        width: 100%;
+        margin: 0;
+        font-family: 'Marcellus', sans-serif;
+        background-color: #253551;
+    }
+
+    .xis-bao {
+        font-size: 31px;
+        margin-top: 28px;
+        margin-left: 17px;
+        z-index: 9999;
+        width: 167px;
+        white-space: nowrap;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 390px;
+        height: 100%;
+        background-color: #253551;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+        z-index: 5;
+    }
+
+    .menu-icon {
+        font-size: 40px;
+        cursor: pointer;
+        padding: 8px;
+        z-index: 5;
+        position: relative;
+        width: 40px;
+        margin-left: 143px;
+        margin-top: 2px;
+        color: black;
+    }
+
+    .menu-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+        margin-top: -65px;
+        height: 915px;
+    }
+
+    .menu-overlay a {
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        margin: 15px 0;
+        margin-left: -5px;
+        font-size: 37px;
+    }
+
+    .menu-icon {
+        font-size: 40px;
+        cursor: pointer;
+        padding: 8px;
+        position: relative;
+        z-index: 9999;
+        width: 40px;
+        margin-left: 143px;
+        margin-top: 8px;
+        color: black;
+        /* cor normal */
+        transition: color 0.3s ease;
+    }
+
+    /* quando o menu estiver ativo, o botão também muda de cor */
+    .menu-icon.active {
+        color: white;
+        position: fixed;
+        margin-top: 9px;
+        margin-left: 312px;
+    }
+
+    .menu-active {
+        background-color: #253551;
+    }
+
+    .menu {
+        display: flex;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 9998;
+        height: 77px;
+    }
+
+    .xis-bao.active {
+        color: white;
+        position: fixed;
+    }
+
+    .restodosite {
+        height: auto;
+    }
+
+    footer {
+        position: relative;
+        border-top: solid 3px #6b6bbd;
+        background-color: #bdd5ff;
+        height: 330px;
+    }
+
+    .corCinza {
+        color: #505050;
+        margin-left: 13px;
+    }
+
+    .bao {
+        font-size: 25px;
+        margin-left: 13px;
+    }
+
+    .move1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .restodosite {
+        height: auto;
+        margin: 0;
+    }
+
+    .face {
+        width: 30px;
+        height: auto;
+        margin-left: 298px;
+    }
+
+    .whats {
+        width: 35px;
+        height: auto;
+        position: relative;
+        top: 2px;
+    }
+
+    .arrumar {
+        overflow: hidden;
+        height: 1572px;
+    }
+
+
+    /*daqui para baixo menu*/
+    .menu-topo {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        background-color: #0f1828;
+        ;
+        color: #fff;
+        padding: 15px 0;
+        cursor: pointer;
+        margin-top: -20px;
+    }
+
+    .menu-topo div {
+        font-size: 20px;
+        transition: 0.2s;
+    }
+
+    .menu-topo div:hover,
+    .ativo {
+        color: #005cff;
+    }
+
+    .conteudo {
+        padding: 30px;
+        display: none;
+    }
+
+    .conteudo.ativo {
+        display: block;
+        animation: 0.3s;
+    }
+
+    .item {
+        background: white;
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menutotal {
+        margin-top: 77px;
+        background-color: #253551;
+        height: 100%;
+        width: 100%;
+    }
+
+    /*divisão*/
+    .outros {
+        font-size: 30px;
+        margin-left: 34%;
+    }
+
+    .xis {
+        font-size: 30px;
+        margin-left: 41%;
+        margin-top: -5%;
+    }
+
+    .emcima {
+        margin-top: 95px;
+        color: white;
+        font-size: 40px;
+        margin-left: 35%;
+    }
+
+    .refri {
+        font-size: 30px;
+        margin-left: 23%;
+        margin-top: -5%;
+    }
+
+    .cervejas {
+        font-size: 30px;
+        margin-left: 32%;
+    }
+
+    .saudaveis {
+        font-size: 30px;
+        margin-left: 30%;
+    }
+
+    .preço {
+        color: #002972;
+        font-size: 18px;
+    }
+
+
+
+
+
+
+}
